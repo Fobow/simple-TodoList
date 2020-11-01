@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+        <title>one simple TodoList</title>
+        <link rel="stylesheet" href="index.css">
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <header>
+            <section>
+                <form action="javascript:postaction()" id="form">
+                    <label for="title">SimpleTodo</label>
+                    <input type="tetx" id="title" name="title" placeholder="add an item to do" required="required" autocomplete="off" />
+                </form>
+            </section>
+        </header>
+        <section>
+            <h2 onclick="save()">UnderGoing<span id="todocount"></span></h2>
+            <ol id="todolist" class="demo-box"></ol>
+            <hr>
+            <h2>Finished<span id="donecount"></span></h2>
+            <ul id="donelist"></ul>
+            <h2>
+                <button id="clearbtn">
+                    <a href="javascript:clear();">clear</a>
+                </button>
+            </h2>
+        </section>
+        <footer>
+            Copyright &copy; 2020 fofo
+        </footer>
+    </body>
+</html>
